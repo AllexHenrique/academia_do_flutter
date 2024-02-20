@@ -31,7 +31,7 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
               onPressed: () {},
               child: Text('Salvar'),
               style: TextButton.styleFrom(
-                  primary: Colors.red,
+                  foregroundColor: Colors.red,
                   padding: EdgeInsets.all(10),
                   minimumSize: Size(100, 50),
                   shape: RoundedRectangleBorder(
@@ -45,7 +45,7 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
               onPressed: () {},
               child: Text('Salvar'),
               style: ElevatedButton.styleFrom(
-                primary: Colors.green.shade100,
+                backgroundColor: Colors.green.shade100,
                 minimumSize: Size(120, 40),
                 shadowColor: Colors.blue,
                 shape: RoundedRectangleBorder(
