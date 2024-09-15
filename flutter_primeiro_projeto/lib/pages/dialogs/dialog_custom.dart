@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 
 class DialogCustom extends Dialog {
-  DialogCustom(BuildContext context)
+  DialogCustom(BuildContext context, {super.key})
       : super(
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-          child: Container(
+          child: SizedBox(
             width: 300,
             height: 300,
             child: Column(

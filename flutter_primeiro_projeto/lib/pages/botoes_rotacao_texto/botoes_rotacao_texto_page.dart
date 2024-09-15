@@ -29,13 +29,13 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {},
-              child: Text('Salvar'),
               style: TextButton.styleFrom(
                   foregroundColor: Colors.red,
                   padding: EdgeInsets.all(10),
                   minimumSize: Size(100, 50),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)))),
+              child: Text('Salvar'),
             ),
             IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app)),
 
@@ -43,7 +43,6 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {},
-              child: Text('Salvar'),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green.shade100,
                 minimumSize: Size(120, 40),
@@ -54,6 +53,7 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
                   ),
                 ),
               ),
+              child: Text('Salvar'),
             ),
             // apenas um espaçamento
             SizedBox(
@@ -71,26 +71,26 @@ class BotoesRotacaoTextoPage extends StatelessWidget {
 
             ElevatedButton(
               onPressed: () {},
-              child: Text('Salvar'),
               style: ButtonStyle(
-                shadowColor: MaterialStateProperty.all(Colors.blue),
-                minimumSize: MaterialStateProperty.resolveWith((states) {
-                  if (states.contains(MaterialState.pressed)) {
+                shadowColor: WidgetStateProperty.all(Colors.blue),
+                minimumSize: WidgetStateProperty.resolveWith((states) {
+                  if (states.contains(WidgetState.pressed)) {
                     return Size(150, 150);
                   }
                   return Size(120, 50);
                 }),
-                backgroundColor: MaterialStateProperty.resolveWith(
+                backgroundColor: WidgetStateProperty.resolveWith(
                   (states) {
-                    if (states.contains(MaterialState.pressed)) {
+                    if (states.contains(WidgetState.pressed)) {
                       return Colors.black;
-                    } else if (states.contains(MaterialState.hovered)) {
+                    } else if (states.contains(WidgetState.hovered)) {
                       return Colors.amber;
                     }
                     return Colors.red.shade100;
                   },
                 ),
               ),
+              child: Text('Salvar'),
             ),
             SizedBox(
               height: 10,
